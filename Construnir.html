@@ -1,26 +1,34 @@
 <!DOCTYPE html>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap');
+</style>
 <html>
 
 <head>
+    <title>Construnir Engenharia</title>
+    <meta name="engenharia civil" content="construção a baixo custo">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="main-header">
+        <nav class="nav">
             <ul>
-                <li> Página Inicial </li>
-                <li> Quem somos </li>
-                <li> O que fazemos </li>
-                <li> Portfólio </li>
-                <li> Contato </li>
+                <li><a href="#pagina_inicial"> Página inicial </a></li>
+                <li><a href="#quem_somos"> Quem somos </a> </li>
+                <li><a href="#o_que_fazemos">O que fazemos</a></li>
+                <li><a href="#portfolio"> Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <hr>
-        <img width="100px" src="Imagens/Logo contrunir.png">
+
+        <br>
+        <hr><br>
+        <img width="100px" src="Imagens/Imagem 2.png">
         <h1> Construnir Engenharia </h1>
     </header>
     <section>
-        <h2> Sobre </h2>
+        <h2 id="pagina_inicial"> Página inicial </h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat nisl dolor, quis volutpat quam
             convallis non. Fusce rutrum augue in interdum finibus. Nullam finibus ante a bibendum pretium. Donec
@@ -32,7 +40,17 @@
             Maecenas eu lorem aliquam, pulvinar nibh congue, gravida elit. Aliquam pharetra, augue et tempor blandit,
             ante quam consequat dolor, eget tristique libero metus ac enim. Curabitur magna libero, condimentum ac
             tellus vitae, tincidunt sagittis tortor. </p>
-        <img  width="900px" src="Imagens/time construnir.jpeg">
+
+    </section>
+    <br>
+    <hr><br>
+    <section>
+        <h2 id="quem_somos"> Quem somos </h2>
+        <p>
+            Somos um grupo de três pessoas que se conheceram durante o curso de Engenharia Civil, Thaís Helena, Júlio
+            Alves e Carolina Brito.
+        </p>
+        <img width="700px" src="Imagens/time construnir.jpeg">
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat nisl dolor, quis volutpat quam
             convallis non. Fusce rutrum augue in interdum finibus. Nullam finibus ante a bibendum pretium. Donec
@@ -45,17 +63,102 @@
             ante quam consequat dolor, eget tristique libero metus ac enim. Curabitur magna libero, condimentum ac
             tellus vitae, tincidunt sagittis tortor.</p>
     </section>
+    <br>
+    <hr><br>
+    <section>
+        <h2 id="o_que_fazemos"> O que fazemos </h2>
+        <p>
+            Nosso propósito é impactar a comunidade de onde viemos e retribuir de alguma forma.
+            Desta forma, nós fazemos obras e construções em casas nas favelas e comunidades a preços baixos, pois assim
+            acreditamos que
+            mais pessoas terão a oportunidade de viver uma vida mais salubre e com qualidade.
+
+        </p>
+    </section>
+    <br>
+    <hr><br>
+    <section>
+        <h2 id="portfolio"> Portfólio </h2>
+        <div>
+            <div>
+                <img width="250px" src="Imagens/Creche_frente_antes.png">
+                <br>
+                <strong>Reforma creche do Chié</strong>
+                &lt;&gt;<h5><a href="#contato">Fale conosco!</a></h5>
+            </div>
+            <br>
+            <div>
+                <img width="250px" src="Imagens/aldeia.jpg">
+                <br>
+                <strong>Reforma Aldeia</strong>
+                &lt;&gt;
+                <h5><a href="#contato">Fale conosco!</a></h5>
+            </div><br>
+            <div>
+                <img width="250px" src="Imagens/restaurante[.jpg">
+                <br>
+                <strong>Reforma Restaurante</strong>
+                &lt;&gt;
+                <h5><a href="#contato">Fale conosco!</a></h5>
+            </div>
+            <br>
+            <div>
+                <img width="250px" src="Imagens/coberta.jpg">
+                <br>
+                <strong>Reforma coberta</strong>
+                &lt;&gt;
+                <h5><a href="#contato">Fale conosco!</a></h5>
+            </div><br>
+            <div>
+                <img width="250px" src="Imagens/calçada.jpg">
+                <br>
+                <strong>Reforma calçada</strong>
+                &lt;&gt;
+                <h5><a href="#contato">Fale conosco!</a></h5>
+                <br></div>
+        </div>
+    </section>
+    <br>
+    <hr><br>
+    <section>
+        <h2 id="contato"> Contato </h2>
+        <p>
+            Fale conosco a qualquer momento para tornar realidade seu sonho
+            &lt;&gt;
+            <button type="button"> ENVIAR </button>
+        </p>
+    </section>
     <footer>
+        <img width="100px" src="Imagens/Logo contrunir.png">
         <h3> Construnir Engenharia</h3>
         <ul>
-            <li><img width="50px" src="Imagens/facebook _logo.png"></li>
-            <li><img width="30px" src="Imagens/instagram_logo.png"></li>
-            <li><img width="30px" src="Imagens/gmail_logo.png"></li>
-            <li><img width="49px" src="Imagens/linkedin_logo.png"></li>
-            <li><img width="34px" src="Imagens/whatsapp_logo.png"></li>
+            <li>
+                <a href="https://www.facebook.com/construnirengenharia/">
+                    <img width="50px" src="Imagens/facebook _logo.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/construnirengenharia/">
+                    <img width="50px" src="Imagens/instagram_logo.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/contrunirengenharia/">
+                    <img width="50px" src="Imagens/linkedin_logo.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://api.whatsapp.com/send?phone=5581997327158/">
+                    <img width="50px" src="Imagens/whatsapp_logo.png">
+                </a>
+            </li>
+
         </ul>
     </footer>
+    <br>
+    <hr><br>
 
 </body>
+<footer> Construnir Engenharia © 2019 | por Carolina Brito </footer>
 
 </html>
