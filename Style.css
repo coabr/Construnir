@@ -22,3 +22,10 @@ html, body {
     background-size: cover;
     padding-bottom: 10px;
 }
+
+footer {
+    background-color: #834d2f;
+    background-size: cover;
+    padding-bottom: 3%;
+
+}
