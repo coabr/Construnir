@@ -1,0 +1,14 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    dotenv (2.7.5)
+
+PLATFORMS
+  ruby
+  x64-mingw32
+
+DEPENDENCIES
+  dotenv
+
+BUNDLED WITH
+   1.17.2

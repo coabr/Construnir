@@ -8,6 +8,9 @@
     <title>Construnir Engenharia</title>
     <meta name="engenharia civil" content="construção a baixo custo">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+        integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -50,7 +53,7 @@
             Somos um grupo de três pessoas que se conheceram durante o curso de Engenharia Civil, Thaís Helena, Júlio
             Alves e Carolina Brito.
         </p>
-        <img width="700px" src="Imagens/Quem somos.png">
+        <img width="1000px" src="Imagens/Quem somos.png">
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat nisl dolor, quis volutpat quam
             convallis non. Fusce rutrum augue in interdum finibus. Nullam finibus ante a bibendum pretium. Donec
@@ -124,12 +127,20 @@
         <h2 id="contato"> Contato </h2>
         <p>
             Fale conosco a qualquer momento e em breve retornaremos
-           <form> 
-                <!-- COLOCAR DENTRO DO FORM O SITE PARA ONDE SERÃO ENVIADAS AS INFORMAÕES QUE O USUARIO VAI COLOCAR PELO FORMULARIO DO SITE --> 
-                <input type="text" placeholder="Digite seu nome" required><br><br>
-                <input type="text" placeholder="(xx) xxxxx-xxxx" required> <input type="text" placeholder="Digite seu email" required>
-                <br><br><textarea name="text" placeholder="Deixe uma mensagem" cols="40" rows="5"></textarea>
-                    <button type="button"> ENVIAR </button>
+            <form class="pure-form pure-form-stacked">
+                <fieldset>
+                    <legend>Formulário de contato</legend>
+                    <label for="email">Nome</label>
+                    <input id="user_name" type="text" placeholder="Digite seu nome" required>
+                    <label for="email">Telefone</label>
+                    <input id="user_phone" type="text" placeholder="(xx) xxxxx-xxxx" required>
+                    <label for="email">Email</label>
+                    <input id="user_email" for="email" type="text" placeholder="Digite seu email" required>
+                    <label for="email">Sua mensagem</label>
+                    <textarea id="user_message" name="text" placeholder="Deixe uma mensagem" cols="40"
+                        rows="5"></textarea>
+                    <button id="send_mail" class="pure-button pure-button-primary" type="button">ENVIAR</button>
+                </fieldset>
             </form>
         </p>
     </section>
@@ -160,9 +171,36 @@
 
         </ul>
     </footer>
-    
+    <script>
+        function sendEmail() {
+            userName = document.getElementById("user_name").value
+            userPhone = document.getElementById("user_phone").value
+            userEmail = document.getElementById("user_email").value
+            userMessage = document.getElementById("user_message").value
+
+            if (userName == "" || userPhone == "" || userEmail == "" || userMessage == "") {
+                alert("Todos os campos do formulário são obrigatórios.")
+                return
+            }
+
+            Email.send({
+                Host: "<%= ENV['HOST'] %>",
+                Username: "<%= ENV['USERNAME'] %>",
+                Password: "<%= ENV['PASSWORD'] %>",
+                From: "<%= ENV['FROM'] %>",
+                To: 'construnirengenharia@gmail.com',
+                Subject: "Contato de usuário " + userEmail,
+                Body: "Mensagem do usuário " + userName + " (" + userPhone + ")\n" + userMessage
+            }).then(
+                message => message == "OK" ? alert("Mensagem enviada!") : alert("Erro no envio")
+            );
+        }
+
+        document.getElementById("send_mail").onclick = sendEmail
+    </script>
 
 
 </body>
 <footer> Construnir Engenharia © 2019 | por Carolina Brito </footer>
+
 </html>
