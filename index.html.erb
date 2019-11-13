@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <style>
-    @import url('https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap');
 </style>
 <html>
 
 <head>
     <title>Construnir Engenharia</title>
     <meta name="engenharia civil" content="construção a baixo custo">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
         integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -15,7 +14,8 @@
 
 <body>
     <header class="main-header">
-        <nav class="nav">
+    <img class="img" width="80px" src="Imagens/Logo construnir.png">
+        <nav class="nav main-nav">
             <ul>
                 <li><a href="#pagina_inicial"> Página inicial </a></li>
                 <li><a href="#quem_somos"> Quem somos </a> </li>
@@ -24,14 +24,11 @@
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-
-        <br>
-        <hr><br>
-        <img width="100px" src="Imagens/Imagem 2.png">
-        <h1> Construnir Engenharia </h1>
+        <h1 class="brand-name brand-name-large"> Construnir Engenharia </h1>
     </header>
-    <section>
-        <h2 id="pagina_inicial"> Página inicial </h2>
+
+    <section class="content-section container">
+        <h2 class="section-header" id="pagina_inicial" > Página inicial </h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat nisl dolor, quis volutpat quam
             convallis non. Fusce rutrum augue in interdum finibus. Nullam finibus ante a bibendum pretium. Donec
@@ -46,14 +43,15 @@
 
     </section>
     <br>
-    <hr><br>
-    <section>
+    <hr>
+    <br>
+    <section class="content-section container">
         <h2 id="quem_somos"> Quem somos </h2>
         <p>
             Somos um grupo de três pessoas que se conheceram durante o curso de Engenharia Civil, Thaís Helena, Júlio
             Alves e Carolina Brito.
         </p>
-        <img width="1000px" src="Imagens/Quem somos.png">
+        <img width="700px" src="Imagens/Quem somos.png">
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat nisl dolor, quis volutpat quam
             convallis non. Fusce rutrum augue in interdum finibus. Nullam finibus ante a bibendum pretium. Donec
@@ -68,7 +66,7 @@
     </section>
     <br>
     <hr><br>
-    <section>
+    <section class="content-section container">
         <h2 id="o_que_fazemos"> O que fazemos </h2>
         <p>
             Nosso propósito é impactar a comunidade de onde viemos e retribuir de alguma forma.
@@ -79,8 +77,9 @@
         </p>
     </section>
     <br>
-    <hr><br>
-    <section>
+    <hr>
+    <br>
+    <section class="content-section container">
         <h2 id="portfolio"> Portfólio </h2>
         <div>
             <div>
@@ -123,7 +122,7 @@
     </section>
     <br>
     <hr><br>
-    <section>
+    <section class="content-section container">
         <h2 id="contato"> Contato </h2>
         <p>
             Fale conosco a qualquer momento e em breve retornaremos
@@ -145,8 +144,8 @@
         </p>
     </section>
     <footer>
-        <img width="100px" src="Imagens/Logo contrunir.png">
-        <h3> Construnir Engenharia</h3>
+        <img class="brand-logo" width="100px" src="Imagens/Logo construnir.png">
+        <h3 class="brand-name"> Construnir Engenharia</h3>
         <ul>
             <li>
                 <a href="https://www.facebook.com/construnirengenharia/">
@@ -199,8 +198,6 @@
         document.getElementById("send_mail").onclick = sendEmail
     </script>
 
-
 </body>
-<footer> Construnir Engenharia © 2019 | por Carolina Brito </footer>
-
+<footer>Construnir Engenharia © 2019 | por Carolina Brito </footer>
 </html>

@@ -1,18 +1,57 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900&display=swap&subset=latin-ext');
 
-{
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-    color: #777;
-}
+@font-face {
+    font-family: 'Cinzel', serif;
+    src: url("Fontes/Cinzel-Regular.ttf") format("ttf"),
+         url("Fontes/Cinzel-Bold.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+        }
+
 
 html, body {
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img {
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+}
 .nav ul {
     margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 2.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: right;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.main-nav li {
+    padding: 0 1%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3);
 }
 
 .main-header {
@@ -26,6 +65,57 @@ html, body {
 footer {
     background-color: #834d2f;
     background-size: cover;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
+}
 
+footer li {
+    display: inline;
+}
+
+.footer a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+    
+.main-footer li {
+    padding: 0 1%;
+
+}
+
+.brand-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: 'Cinzel', serif;
+    font-weight: normal;
+    color: white;
+}
+
+.brand-name-large {
+    font-size: 5.5em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.img2 {
+    border-radius: 50%;
+    margin: 10px;
 }
