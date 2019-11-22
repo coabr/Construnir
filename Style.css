@@ -24,6 +24,7 @@ body {
     float: left;
     margin: 10px;
 }
+
 .nav ul {
     margin: 0;
 }
@@ -62,10 +63,11 @@ body {
     padding-bottom: 10px;
 }
 
-footer {
+.main-footer {
     background-color: #834d2f;
+    color: white;
     background-size: cover;
-    padding-bottom: 1%;
+    padding: .25em 0;
 }
 
 footer li {
@@ -81,7 +83,6 @@ footer li {
     
 .main-footer li {
     padding: 0 1%;
-
 }
 
 .brand-name {
@@ -112,10 +113,25 @@ footer li {
     font-weight: bold;
     color: #333;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.0em;
 }
 
 .img2 {
     border-radius: 50%;
     margin: 10px;
 }
+
+.main-footer-container {
+    display: ruby;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li{
+    padding: 0 .2em
+}
+
